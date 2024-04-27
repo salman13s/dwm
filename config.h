@@ -85,6 +85,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ 0, 				XK_F2,     spawn, 	   SHCMD("amixer -q sset Master 5%-")},	
+	{ 0, 				XK_F3,     spawn, 	   SHCMD("amixer -q sset Master 5%+")},	
+	{ MODKEY|ShiftMask, 		XK_i,     spawn, 	   SHCMD("firefox")},
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
